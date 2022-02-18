@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops and dom</title>
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+    <script src="./app.js"></script>
+    <p id="demo"></p>
+    
+<script>
+
+const drinks =["soda ","shake ","water"];
+//while loop
+let i = 0;
+let text3 = "";
+while (drinks[i]) {
+  text3 += drinks[i] + "<br>";
+  i++;
+}
+
+document.getElementById("demo").innerHTML = text3;
+
+
+function myFunction_set() {
+  
+  r.style.setProperty('--blue', 'lightblue');
+}
+
+
+</script>
+
+<h1 id="button1">Hello, if you click this button, my color css will change with js.</h1>
+
+<button type="button" 
+onclick="document.getElementById('button1').style.color = 'green'";>
+Click Me!</button>
+
+<h1 id ="button2">If you click this then the page color css will change with js.</h1>
+<button type="button" onclick="chBackcolor('green')";>Click Me!</button>
+
+<h1>Hit f12 to see another loop in action.</h1>
+
+</body>
+</html>
